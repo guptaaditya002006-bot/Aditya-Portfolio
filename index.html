@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Gupta | Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        /* Header */
+        header {
+            background-color: #2a2a2a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.1em;
+            margin: 10px 0 0;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #e63946;
+        }
+
+        /* Main Section */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* About Me Section */
+        #about {
+            background-color: #fff;
+            color: #444;
+        }
+        #about h2 {
+            font-size: 2.2em;
+            color: #2a2a2a;
+        }
+        #about p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Skills Section */
+        #skills {
+            background-color: #f7f7f7;
+        }
+        #skills h2 {
+            font-size: 2.2em;
+            color: #2a2a2a;
+        }
+        .skill-card {
+            display: inline-block;
+            background-color: #fff;
+            padding: 30px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .skill-card h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #fff;
+        }
+        #projects h2 {
+            font-size: 2.2em;
+            color: #2a2a2a;
+        }
+        .project-card {
+            display: inline-block;
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .project-card h3 {
+            font-size: 1.7em;
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .project-card a {
+            text-decoration: none;
+            background-color: #e63946;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .project-card a:hover {
+            background-color: #f1faee;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #e63946;
+            color: white;
+            padding: 60px 20px;
+        }
+        #contact h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        #contact p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        #contact button {
+            padding: 15px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #contact button:hover {
+            background-color: #e63946;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Aditya Gupta</h1>
+        <p>Software Engineer | Web Developer</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello, I’m Aditya Gupta. I’m passionate about technology and creating innovative solutions. With experience in web development, I love to build user-friendly and visually appealing websites and applications. I’m constantly learning and adapting to new technologies to stay ahead in the fast-paced tech world.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-card">
+            <h3>HTML & CSS</h3>
+            <p>Building responsive and beautiful websites with clean code.</p>
+        </div>
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Creating interactive and dynamic web applications.</p>
+        </div>
+        <div class="skill-card">
+            <h3>React</h3>
+            <p>Building powerful and scalable frontend applications.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>A responsive portfolio website showcasing my work.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>An e-commerce web application with React and Node.js.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>A personal blog built with a static site generator.</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to work together, feel free to reach out.</p>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message" rows="5"></textarea>
+        <button>Send Message</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Aditya Gupta. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
